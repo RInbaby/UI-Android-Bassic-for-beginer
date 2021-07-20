@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:background="#F3F3F3"-->
+<!--    tools:context=".Activity.XuLyVanBan">-->
+
+<!--    <ScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical">-->
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content">-->
+
+<!--                <android.support.v7.widget.Toolbar-->
+<!--                    android:id="@+id/toolbar"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:background="?attr/colorPrimary">-->
+
+<!--                    <RelativeLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content">-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginTop="8.5dp"-->
+<!--                            android:layout_marginRight="55dp"-->
+<!--                            android:gravity="center"-->
+<!--                            android:text="XỬ LÝ VĂN BẢN"-->
+<!--                            android:textColor="#ffffff"-->
+<!--                            android:textSize="20dp"-->
+<!--                            android:textStyle="bold" />-->
+
+<!--                        <ImageView-->
+<!--                            android:id="@+id/imnotification"-->
+<!--                            android:layout_width="25dp"-->
+<!--                            android:layout_height="25dp"-->
+<!--                            android:layout_alignParentRight="true"-->
+<!--                            android:layout_marginTop="8.5dp"-->
+<!--                            android:layout_marginRight="15dp"-->
+<!--                            android:layout_marginBottom="8.5dp"-->
+<!--                            android:src="@drawable/notification" />-->
+<!--                    </RelativeLayout>-->
+<!--                </android.support.v7.widget.Toolbar>-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="152dp"-->
+<!--                    android:layout_marginTop="58dp"-->
+<!--                    android:src="@drawable/group1503x" />-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/btnNamLamViecTrangChu"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="37dp"-->
+<!--                    android:layout_marginLeft="200dp"-->
+<!--                    android:layout_marginTop="90dp"-->
+<!--                    android:layout_marginRight="30dp"-->
+<!--                    android:background="@drawable/chonnam"-->
+<!--                    android:text="Năm làm việc:  2019"-->
+<!--                    android:textColor="@color/colorWhite" />-->
+
+<!--                <Button-->
+<!--                    android:layout_width="40dp"-->
+<!--                    android:layout_height="40dp"-->
+<!--                    android:layout_marginLeft="20dp"-->
+<!--                    android:layout_marginTop="90dp"-->
+<!--                    android:background="@drawable/group863x" />-->
+
+<!--                <Button-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="700dp"-->
+<!--                    android:layout_marginLeft="10dp"-->
+<!--                    android:layout_marginTop="165dp"-->
+<!--                    android:layout_marginRight="10dp"-->
+<!--                    android:layout_marginBottom="30dp"-->
+<!--                    android:background="@drawable/btnmain"-->
+<!--                    android:enabled="false" />-->
+
+<!--                <ListView-->
+<!--                    android:id="@+id/lvXuLyVanBan"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginHorizontal="30dp"-->
+<!--                    android:layout_marginTop="190dp" />-->
+<!--            </RelativeLayout>-->
+<!--        </LinearLayout>-->
+<!--    </ScrollView>-->
+<!--</RelativeLayout>-->
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/firstFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ttttttttttt"
+        android:textColor="@color/colorBackground"
+        android:textSize="40sp"
+        android:textStyle="italic|bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

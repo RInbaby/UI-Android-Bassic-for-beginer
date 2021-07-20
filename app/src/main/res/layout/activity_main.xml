@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/vLogin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/vvv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="18dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp">
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="20dp"
+                android:text="Login"
+                android:textStyle="bold"
+                android:textColor="@color/colorlogin"
+                android:textSize="22dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="@string/name_log"
+                android:textColor="@color/colorlogin"
+                android:textSize="19dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight="26dp">
+
+                <ImageView
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:layout_marginTop="14dp"
+                    android:src="@drawable/icon2x" />
+                <EditText
+                    android:maxLines="1"
+                    android:lines="1"
+                    android:id="@+id/etTaiKhoan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" Student Identity Number"
+                    android:hint="B17Dcpt123"
+                    android:textColor="@color/colorEdt"
+                    android:paddingLeft="016dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight="26dp"
+                android:layout_marginTop="17dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:layout_marginTop="14dp"
+                    android:src="@drawable/path41902x" />
+                <EditText
+                    android:maxLines="1"
+                    android:lines="1"
+                    android:id="@+id/etTPass"
+                    android:layout_width="318dp"
+                    android:layout_height="45dp"
+                    android:text="Password"
+                    android:hint="123456"
+                    android:textColor="@color/colorEdt"
+                    android:paddingLeft="016dp" />
+                <ImageView
+                    android:layout_width="17dp"
+                    android:layout_height="19dp"
+                    android:layout_marginTop="14dp"
+                    android:src="@drawable/hide" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight="26dp"
+                android:gravity="center"
+                android:layout_marginTop="50dp">
+
+                <Button
+                    android:id="@+id/btnDangnhap"
+                    android:layout_width="150dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/dangnhap"
+                    android:enabled="false"
+                    android:text="Log me in"
+                    android:textSize="19dp"
+                    android:textColor="@color/colorlogin" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Forgot Password?"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:textColor="@color/colorlogin"/>
+
+        </LinearLayout>
+</LinearLayout>
