@@ -1,4 +1,4 @@
-package com.example.inforcie;
+package com.example.inforcie.Activity;
 
 import android.os.Bundle;
 
@@ -6,11 +6,14 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 
 import android.view.MenuItem;
-import android.view.View;
 
+import com.example.inforcie.Fragment.Home_Fragment;
+import com.example.inforcie.Fragment.Personal_Fragment;
+import com.example.inforcie.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class Bottom_Home extends AppCompatActivity {
@@ -33,8 +36,8 @@ public class Bottom_Home extends AppCompatActivity {
                     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                         switch (item.getItemId()) {
                             case R.id.navigation_home:
-                                //viewPager.setCurrentItem(0);
-                                break;
+                                loadFragment(new Home_Fragment());
+                                return true;
                             case R.id.navigation_personal:
                                // viewPager.setCurrentItem(1);
                                 break;
@@ -50,5 +53,12 @@ public class Bottom_Home extends AppCompatActivity {
                 });
 
 
+    }
+    private void loadFragment(Fragment fragment) {
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.flFragment, fragment);
+        transaction.addToBackStack(null);
+
+        transaction.commit();
     }
 }
