@@ -103,7 +103,7 @@
                     android:background="@drawable/dangnhap"
                     android:text="Log me in"
                     android:textSize="19dp"
-
+                    android:enabled="true"
                     android:textColor="@color/colorlogin" />
             </LinearLayout>
 
