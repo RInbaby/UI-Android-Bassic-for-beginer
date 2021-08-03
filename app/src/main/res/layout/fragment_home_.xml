@@ -127,38 +127,22 @@
                             android:background="@drawable/listitem"
                             android:textSize="9dp"
                             android:text="@string/About"/>
-<!--                        <com.google.android.material.tabs.TabLayout-->
-<!--                            android:id="@+id/activity_dashboard_tablayout"-->
-<!--                            android:layout_width="match_parent"-->
-<!--                            android:layout_height="wrap_content"-->
-<!--                            android:background="@color/colorSearch">-->
 
-<!--                            <com.google.android.material.tabs.TabItem-->
-<!--                                android:id="@+id/tabitem1"-->
-<!--                                android:layout_width="wrap_content"-->
-<!--                                android:layout_height="match_parent"-->
-<!--                                android:background="@color/colorlogin"-->
-<!--                                android:text="New Feed" />-->
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
 
-<!--                            <com.google.android.material.tabs.TabItem-->
-<!--                                android:id="@+id/tabitem2"-->
-<!--                                android:layout_width="wrap_content"-->
-<!--                                android:background="@color/colorlogin"-->
-<!--                                android:layout_height="match_parent"-->
-<!--                                android:text="News" />-->
-
-<!--                        </com.google.android.material.tabs.TabLayout>-->
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rcvimg"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_marginHorizontal="10dp"
+                            android:padding="15dp"/>
 
                     </LinearLayout>
                 </LinearLayout>
-                <ListView
-                    android:id="@+id/lvXuLyVanBan"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="30dp"
-                    android:layout_marginTop="190dp" />
-
-
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
