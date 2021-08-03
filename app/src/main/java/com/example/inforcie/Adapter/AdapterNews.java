@@ -9,6 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.inforcie.Model.Image;
+import com.example.inforcie.Model.News;
 import com.example.inforcie.R;
 
 import androidx.annotation.NonNull;
@@ -17,63 +18,69 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
 
-public class MyImage extends RecyclerView.Adapter<MyImage.ContactHolder> {
+public class AdapterNews extends RecyclerView.Adapter<AdapterNews.ContactHolder> {
 
-     ArrayList<Image> image;
-     Context mContext;
-     ItemClickListener onItemClick;
+    ArrayList<News> news;
+    Context mContext;
+    ItemClickListener onItemClick;
 
-    public MyImage(ArrayList<Image> image, Context context) {
-        this.image = image;
+    public AdapterNews(ArrayList<News> news, Context context) {
+        this.news = news;
         this.mContext = context;
     }
 
     @NonNull
     @Override
-    public MyImage.ContactHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
+    public AdapterNews.ContactHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
         LayoutInflater layoutInflater = LayoutInflater.from(viewGroup.getContext());
-        View view = layoutInflater.inflate(R.layout.customlistimage, viewGroup, false);
+        View view = layoutInflater.inflate(R.layout.customnews, viewGroup, false);
         return new ContactHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull MyImage.ContactHolder contactHolder, int position) {
+    public void onBindViewHolder(@NonNull ContactHolder contactHolder, int position) {
 
-        final  Image image2 = image.get(position);
-        contactHolder.setImageView(image2.getImg());
-        contactHolder.setName1(image2.getName1());
-        contactHolder.setName2(image2.getName2());
+        final  News news2 = news.get(position);
+        contactHolder.setImageView(news2.getImg());
+        contactHolder.setName2(news2.getName2());
+        contactHolder.setName1(news2.getName1());
+
     }
 
     @Override
     public int getItemCount() {
-        return image == null ? 0 : image.size();
+        return news == null ? 0 : news.size();
     }
 
     public class ContactHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         ImageView imageView;
-        TextView name1;
         TextView name2;
+        TextView name1;
+
 
         public ContactHolder(View itemView) {
             super(itemView);
-            imageView = itemView.findViewById(R.id.imglist);
-            name1 = itemView.findViewById(R.id.date);
-            name2 = itemView.findViewById(R.id.note);
+            imageView = itemView.findViewById(R.id.imglist2);
+            name2 = itemView.findViewById(R.id.note2);
+            name1 = itemView.findViewById(R.id.date2);
+
             itemView.setOnClickListener(this);
         }
         public void setImageView(int imageView2) {
             imageView.setImageResource(imageView2);
         }
 
-        public void setName1(String namee1) {
-            name1.setText(namee1);
-        }
-
         public void setName2(String namee2) {
             name2.setText(namee2);
 
         }
+
+        public void setName1(String namee1) {
+            name1.setText(namee1);
+        }
+
+
+
         public void onClick(View v) {
             if (onItemClick != null) onItemClick.onItemClick(v, getAdapterPosition());
 
@@ -83,5 +90,6 @@ public class MyImage extends RecyclerView.Adapter<MyImage.ContactHolder> {
         public void onItemClick(View v, int adapterPosition) {
         }
     }
+
 
 }
