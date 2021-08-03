@@ -58,12 +58,12 @@ public class Home_Fragment extends Fragment {
         listAdapter2 = new AdapterNews(contactsList2, getContext());
         recyclerView2.setAdapter(listAdapter2);
 
-        contactsList.add(new Image(R.drawable.quochuy, "May20,20", "The global ecomic impact of Covid"));
-        contactsList.add(new Image(R.drawable.quochuy, "May11,11", "The global "));
-        contactsList.add(new Image(R.drawable.quochuy, "May21,21", "ecomic impact of Covid"));
-        contactsList.add(new Image(R.drawable.quochuy, "May20,20", " ecomic impact of "));
-        contactsList.add(new Image(R.drawable.quochuy, "May20,20", "The  ecomic  of Covid"));
-        contactsList.add(new Image(R.drawable.quochuy, "May20,20", "global ecomic  of "));
+        contactsList2.add(new News(R.drawable.quochuy, "May20,20", "The global ecomic impact of Covid"));
+        contactsList2.add(new News(R.drawable.quochuy, "May11,11", "The global "));
+        contactsList2.add(new News(R.drawable.quochuy, "May21,21", "ecomic impact of Covid"));
+        contactsList2.add(new News(R.drawable.quochuy, "May20,20", " ecomic impact of "));
+        contactsList2.add(new News(R.drawable.quochuy, "May20,20", "The  ecomic  of Covid"));
+        contactsList2.add(new News(R.drawable.quochuy, "May20,20", "global ecomic  of "));
         listAdapter.notifyDataSetChanged();
 
         return view;
