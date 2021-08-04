@@ -132,13 +132,13 @@
                     </LinearLayout>
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="200dp"
+                        android:layout_height="190dp"
                         android:orientation="horizontal">
 
                         <androidx.recyclerview.widget.RecyclerView
                             android:id="@+id/rcvimg"
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
+                            android:layout_height="wrap_content"
                             android:orientation="horizontal"
                             android:layout_marginHorizontal="10dp"
                             android:padding="15dp"/>
@@ -149,9 +149,13 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="300dp"
                         android:text="@string/see"
+                        android:textSize="15dp"
                         android:background="@drawable/seeall"
                         android:textColor="@color/colorlogin"
                         />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="12dp"/>
                 </LinearLayout>
                 <TextView
                     android:layout_width="match_parent"
@@ -163,16 +167,77 @@
                     android:background="@drawable/search"
                     android:orientation="vertical">
 
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/News"
+                        android:textSize="19dp"
+                        android:textStyle="bold"
+                        android:layout_margin="18dp"
+                        android:textColor="@color/colorlogin"/>
+
                     <androidx.recyclerview.widget.RecyclerView
                         android:id="@+id/rcv2"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:orientation="horizontal"
                         android:layout_marginHorizontal="10dp"
                         android:padding="15dp"/>
-                    
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="300dp"
+                        android:text="@string/see"
+                        android:textSize="15dp"
+                        android:background="@drawable/seeall"
+                        android:textColor="@color/colorlogin"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="12dp"/>
                     
                 </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:background="@drawable/search"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Events"
+                        android:textSize="19dp"
+                        android:textStyle="bold"
+                        android:layout_margin="18dp"
+                        android:textColor="@color/colorlogin"/>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rcvevent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginHorizontal="10dp"
+                        android:padding="15dp"/>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="300dp"
+                        android:text="@string/see"
+                        android:textSize="15dp"
+                        android:background="@drawable/seeall"
+                        android:textColor="@color/colorlogin"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="12dp"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"/>
+
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

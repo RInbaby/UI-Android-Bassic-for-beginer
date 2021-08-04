@@ -12,6 +12,7 @@ import androidx.fragment.app.FragmentTransaction;
 import android.view.MenuItem;
 
 import com.example.inforcie.Fragment.Home_Fragment;
+import com.example.inforcie.Fragment.Notificators;
 import com.example.inforcie.Fragment.Personal_Fragment;
 import com.example.inforcie.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -42,7 +43,7 @@ public class Bottom_Home extends AppCompatActivity {
                                // viewPager.setCurrentItem(1);
                                 break;
                             case R.id.navigation_notifications:
-                               // viewPager.setCurrentItem(2);
+                                loadFragment(new Notificators());
                             case R.id.navigation_setting:
                                // viewPager.setCurrentItem(2);
                                 break;
