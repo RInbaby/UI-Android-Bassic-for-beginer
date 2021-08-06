@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="80dp"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/search"
+    android:paddingLeft="12dp"
+    android:paddingTop="5dp"
+    android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/notice"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorlogin"
+            android:text="@string/GT"/>
+        <TextView
+            android:id="@+id/time"
+            android:text="@string/Time"
+            android:layout_width="wrap_content"
+            android:paddingTop="8dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorLogin2"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:paddingRight="5dp"
+            android:background="@color/colorLogin2"
+            />
+
+
+</LinearLayout>

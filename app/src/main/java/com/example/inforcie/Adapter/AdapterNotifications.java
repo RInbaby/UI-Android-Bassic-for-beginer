@@ -4,9 +4,10 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
-import com.example.inforcie.Model.News;
+
+
+import com.example.inforcie.Model.Notifications;
 import com.example.inforcie.R;
 
 import androidx.annotation.NonNull;
@@ -15,65 +16,59 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
 
-public class AdapterNews extends RecyclerView.Adapter<AdapterNews.ContactHolder> {
+public class AdapterNotifications extends RecyclerView.Adapter<AdapterNotifications.ContactHolder> {
 
-    ArrayList<News> news;
+    ArrayList<Notifications> notice;
     Context mContext;
     ItemClickListener onItemClick;
 
-    public AdapterNews(ArrayList<News> news, Context context) {
-        this.news = news;
+    public AdapterNotifications(ArrayList<Notifications> notice, Context context) {
+        this.notice = notice;
         this.mContext = context;
     }
 
     @NonNull
     @Override
-    public AdapterNews.ContactHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
+    public AdapterNotifications.ContactHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
         LayoutInflater layoutInflater = LayoutInflater.from(viewGroup.getContext());
-        View view = layoutInflater.inflate(R.layout.customnews, viewGroup, false);
+        View view = layoutInflater.inflate(R.layout.customnotificatons, viewGroup, false);
         return new ContactHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull ContactHolder contactHolder, int position) {
 
-        final  News news2 = news.get(position);
-        contactHolder.setImageView(news2.getImg());
-        contactHolder.setName2(news2.getName2());
-        contactHolder.setName1(news2.getName1());
+        final  Notifications notice2 = notice.get(position);
+        contactHolder.setNotice(notice2.getNotice());
+        contactHolder.setTime(notice2.getTime());
 
     }
 
     @Override
     public int getItemCount() {
-        return news == null ? 0 : news.size();
+        return notice == null ? 0 : notice.size();
     }
 
     public class ContactHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
-        ImageView imageView;
-        TextView name2;
-        TextView name1;
+        TextView notice;
+        TextView time;
 
 
         public ContactHolder(View itemView) {
             super(itemView);
-            imageView = itemView.findViewById(R.id.imglist2);
-            name2 = itemView.findViewById(R.id.note2);
-            name1 = itemView.findViewById(R.id.date2);
+            notice = itemView.findViewById(R.id.notice);
+            time = itemView.findViewById(R.id.time);
 
             itemView.setOnClickListener(this);
         }
-        public void setImageView(int imageView2) {
-            imageView.setImageResource(imageView2);
-        }
 
-        public void setName2(String namee2) {
-            name2.setText(namee2);
+        public void setNotice(String namee2) {
+            notice.setText(namee2);
 
         }
 
-        public void setName1(String namee1) {
-            name1.setText(namee1);
+        public void setTime(String namee1) {
+            time.setText(namee1);
         }
 
 
