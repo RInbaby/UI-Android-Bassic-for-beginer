@@ -21,11 +21,11 @@
         android:orientation="horizontal">
         <ImageView
             android:id="@+id/imglist2"
-            android:layout_width="60dp"
-            android:layout_height="50dp"
+            android:layout_width="90dp"
+            android:layout_height="70dp"
             android:paddingLeft="13dp"
             android:paddingTop="10dp"
-            android:src="@drawable/quochuy"/>
+            android:src="@drawable/avt"/>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -52,11 +52,115 @@
         </LinearLayout>
 
     </LinearLayout>
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="@color/colorlogin"
-        android:text="@string/About"/>
+        android:paddingTop="20dp"
+        android:paddingLeft="18dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorlogin"
+            android:textSize="17dp"
+            android:text="@string/About"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            />
+
+        <View
+            android:layout_width="370dp"
+            android:layout_height="1dp"
+            android:background="@color/colorLogin2"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorlogin"
+            android:textSize="17dp"
+            android:text="@string/noti"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            />
+
+        <View
+            android:layout_width="370dp"
+            android:layout_height="1dp"
+            android:background="@color/colorLogin2"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorlogin"
+            android:textSize="17dp"
+            android:text="@string/language"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            />
+
+        <View
+            android:layout_width="370dp"
+            android:layout_height="1dp"
+            android:background="@color/colorLogin2"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorlogin"
+            android:textSize="17dp"
+            android:text="@string/Contact"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            />
+
+        <View
+            android:layout_width="370dp"
+            android:layout_height="1dp"
+            android:background="@color/colorLogin2"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorlogin"
+            android:textSize="17dp"
+            android:text="@string/logout"/>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/ver"
+            android:textColor="@color/colorLogin2"
+            />
+
+    </RelativeLayout>
 
 
 </LinearLayout>

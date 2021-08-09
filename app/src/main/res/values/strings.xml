@@ -18,7 +18,13 @@
     <string name="Notifications">Notifications</string>
     <string name="Setting">Setting</string>
     <string name="Schoolarship">Schoolarship</string>
-    <string name="About">About</string>
+    <string name="About">About us</string>
+    <string name="noti">Notification</string>
+    <string name="language">Languages</string>
+    <string name="Contact">Contact</string>
+    <string name="logout">Logout</string>
+    <string name="ver">Version 1.0</string>
+
     <string name="Date">May20,20</string>
     <string name="Time">1h ago</string>
     <string name="GT">The global ecomic impact of Covid</string>

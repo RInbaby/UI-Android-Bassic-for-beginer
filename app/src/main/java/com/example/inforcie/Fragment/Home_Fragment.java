@@ -51,12 +51,12 @@ public class Home_Fragment extends Fragment {
         listAdapter = new MyImage(contactsList, getContext());
         recyclerView.setAdapter(listAdapter);
 
-        contactsList.add(new Image(R.drawable.quochuy, "May20,20", "The global ecomic impact of Covid"));
-        contactsList.add(new Image(R.drawable.quochuy, "May11,11", "The global "));
-        contactsList.add(new Image(R.drawable.quochuy, "May21,21", "ecomic impact of Covid"));
-        contactsList.add(new Image(R.drawable.quochuy, "May20,20", " ecomic impact of "));
-        contactsList.add(new Image(R.drawable.quochuy, "May20,20", "The  ecomic  of Covid"));
-        contactsList.add(new Image(R.drawable.quochuy, "May20,20", "global ecomic  of "));
+        contactsList.add(new Image(R.drawable.list1, "May20,20", "The global ecomic impact of Covid"));
+        contactsList.add(new Image(R.drawable.list2, "May11,11", "The global "));
+        contactsList.add(new Image(R.drawable.list1, "May21,21", "ecomic impact of Covid"));
+        contactsList.add(new Image(R.drawable.list1, "May20,20", " ecomic impact of "));
+        contactsList.add(new Image(R.drawable.list2, "May20,20", "The  ecomic  of Covid"));
+        contactsList.add(new Image(R.drawable.list1, "May20,20", "global ecomic  of "));
         listAdapter.notifyDataSetChanged();
 
     // for News
@@ -65,12 +65,12 @@ public class Home_Fragment extends Fragment {
         listAdapter2 = new AdapterNews(contactsList2, getContext());
         recyclerView2.setAdapter(listAdapter2);
 
-        contactsList2.add(new News(R.drawable.quochuy, "May20,20", "The global ecomic impact of Covid"));
-        contactsList2.add(new News(R.drawable.quochuy, "May11,11", "The global "));
-        contactsList2.add(new News(R.drawable.quochuy, "May21,21", "ecomic impact of Covid"));
-        contactsList2.add(new News(R.drawable.quochuy, "May20,20", " ecomic impact of "));
-        contactsList2.add(new News(R.drawable.quochuy, "May20,20", "The  ecomic  of Covid"));
-        contactsList2.add(new News(R.drawable.quochuy, "May20,20", "global ecomic  of "));
+        contactsList2.add(new News(R.drawable.list2, "May20,20", "The global ecomic impact of Covid"));
+        contactsList2.add(new News(R.drawable.list1, "May11,11", "The global "));
+        contactsList2.add(new News(R.drawable.list2, "May21,21", "ecomic impact of Covid"));
+        contactsList2.add(new News(R.drawable.list1, "May20,20", " ecomic impact of "));
+        contactsList2.add(new News(R.drawable.list2, "May20,20", "The  ecomic  of Covid"));
+        contactsList2.add(new News(R.drawable.list1, "May20,20", "global ecomic  of "));
         listAdapter.notifyDataSetChanged();
 
         // For Events
@@ -79,12 +79,12 @@ public class Home_Fragment extends Fragment {
         listAdapter3 = new AdapterEvents(contactsList3, getContext());
         recyclerView3.setAdapter(listAdapter3);
 
-        contactsList3.add(new Events(R.drawable.quochuy, "May20,20", "The global ecomic impact of Covid"));
-        contactsList3.add(new Events(R.drawable.quochuy, "May11,11", "The global "));
-        contactsList3.add(new Events(R.drawable.quochuy, "May21,21", "ecomic impact of Covid"));
-        contactsList3.add(new Events(R.drawable.quochuy, "May20,20", " ecomic impact of "));
-        contactsList3.add(new Events(R.drawable.quochuy, "May20,20", "The  ecomic  of Covid"));
-        contactsList3.add(new Events(R.drawable.quochuy, "May20,20", "global ecomic  of "));
+        contactsList3.add(new Events(R.drawable.list2, "May20,20", "The global ecomic impact of Covid"));
+        contactsList3.add(new Events(R.drawable.list1, "May11,11", "The global "));
+        contactsList3.add(new Events(R.drawable.list2, "May21,21", "ecomic impact of Covid"));
+        contactsList3.add(new Events(R.drawable.list2, "May20,20", " ecomic impact of "));
+        contactsList3.add(new Events(R.drawable.list1, "May20,20", "The  ecomic  of Covid"));
+        contactsList3.add(new Events(R.drawable.list2, "May20,20", "global ecomic  of "));
         listAdapter.notifyDataSetChanged();
 
 

@@ -70,7 +70,7 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="157dp"
-                    android:src="@drawable/group1503x"
+                    android:src="@drawable/inbackground"
                     />
                 <TextView
                     android:layout_width="match_parent"
