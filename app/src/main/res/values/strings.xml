@@ -12,6 +12,8 @@
     <string name="Search">Search</string>
     <string name="Feature">Feature</string>
     <string name="News">News</string>
+    <string name="Society">Society</string>
+    <string name="Studentstory">Student story</string>
     <string name="Events">Events</string>
     <string name="Education">Education</string>
     <string name="Projects">Projects</string>
@@ -23,6 +25,7 @@
     <string name="language">Languages</string>
     <string name="Contact">Contact</string>
     <string name="logout">Logout</string>
+    <string name="login">Login</string>
     <string name="ver">Version 1.0</string>
 
     <string name="Date">May20,20</string>

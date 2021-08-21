@@ -6,8 +6,8 @@
     android:orientation="horizontal">
     <ImageView
         android:id="@+id/imglist2"
-        android:layout_width="70dp"
-        android:layout_height="60dp"
+        android:layout_width="90dp"
+        android:layout_height="76dp"
         android:paddingLeft="10dp"
         android:paddingTop="10dp"
         android:src="@drawable/quochuy"/>
@@ -20,8 +20,8 @@
 
         <TextView
             android:id="@+id/note2"
-            android:layout_width="170dp"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
             android:textColor="@color/colorlogin"
             android:text="@string/GT"/>
         <TextView

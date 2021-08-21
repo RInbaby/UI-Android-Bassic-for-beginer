@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/homefragment"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -62,7 +63,7 @@
                         android:layout_height="25dp"
                         android:layout_marginRight="8dp"
                         android:adjustViewBounds="true"
-                        android:src="@drawable/searchh"/>
+                        android:src="@drawable/search1"/>
                 </LinearLayout>
                 <TextView
                     android:layout_width="match_parent"
@@ -70,7 +71,7 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="157dp"
-                    android:src="@drawable/inbackground"
+                    android:src="@drawable/bac1"
                     />
                 <TextView
                     android:layout_width="match_parent"
@@ -82,7 +83,7 @@
                     android:orientation="vertical">
                     <TextView
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="19dp"
                         android:text="@string/Feature"
                         android:textSize="19dp"
                         android:textStyle="bold"
@@ -91,14 +92,14 @@
                     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                         xmlns:app="http://schemas.android.com/apk/res-auto"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="36dp"
                         android:paddingLeft="9dp"
                         android:orientation="horizontal">
                         <Button
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:background="@drawable/listitem"
-                            android:textSize="9dp"
+                            android:textSize="13dp"
                             android:text="@string/Education"/>
                         <TextView
                             android:layout_width="5dp"
@@ -107,7 +108,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:background="@drawable/listitem"
-                            android:textSize="9dp"
+                            android:textSize="13dp"
                             android:text="@string/Projects"/>
                         <TextView
                             android:layout_width="5dp"
@@ -116,7 +117,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:background="@drawable/listitem"
-                            android:textSize="9dp"
+                            android:textSize="13dp"
                             android:text="@string/Schoolarship"/>
                         <TextView
                             android:layout_width="5dp"
@@ -125,7 +126,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:background="@drawable/listitem"
-                            android:textSize="9dp"
+                            android:textSize="13dp"
                             android:text="@string/About"/>
 
 
@@ -141,18 +142,19 @@
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
                             android:layout_marginHorizontal="10dp"
-                            android:padding="15dp"/>
+                            android:padding="9dp"/>
 
                     </LinearLayout>
+
                     <Button
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="300dp"
-                        android:text="@string/see"
-                        android:textSize="15dp"
                         android:background="@drawable/seeall"
+                        android:text="@string/see"
                         android:textColor="@color/colorlogin"
-                        />
+                        android:textSize="15dp" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="12dp"/>
@@ -173,16 +175,16 @@
                         android:text="@string/News"
                         android:textSize="19dp"
                         android:textStyle="bold"
-                        android:layout_margin="18dp"
+                        android:layout_margin="15dp"
                         android:textColor="@color/colorlogin"/>
 
                     <androidx.recyclerview.widget.RecyclerView
                         android:id="@+id/rcv2"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
+                        android:layout_height="270dp"
                         android:layout_marginHorizontal="10dp"
-                        android:padding="15dp"/>
+                        android:orientation="horizontal" />
+
                     <Button
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -194,9 +196,50 @@
                         />
                     <TextView
                         android:layout_width="wrap_content"
-                        android:layout_height="12dp"/>
-                    
+                        android:layout_height="9dp"/>
+
                 </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:background="@drawable/search"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="19dp"
+                        android:text="@string/Society"
+                        android:textSize="19dp"
+                        android:textStyle="bold"
+                        android:layout_margin="18dp"
+                        android:textColor="@color/colorlogin"/>
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="190dp"-->
+<!--                        android:orientation="vertical">-->
+
+<!--                        <androidx.recyclerview.widget.RecyclerView-->
+<!--                            android:id="@+id/society"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:orientation="horizontal"-->
+<!--                            android:layout_marginHorizontal="10dp"-->
+<!--                            android:padding="9dp"/>-->
+<!--                        <androidx.recyclerview.widget.RecyclerView-->
+<!--                            android:id="@+id/society2"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:orientation="horizontal"-->
+<!--                            android:layout_marginHorizontal="10dp"-->
+<!--                            android:padding="9dp"/>-->
+
+<!--                    </LinearLayout>-->
+
+                </LinearLayout>
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="8dp"/>

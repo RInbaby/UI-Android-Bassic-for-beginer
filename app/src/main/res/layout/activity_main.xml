@@ -17,7 +17,7 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="250dp">
+                android:layout_height="180dp">
             </RelativeLayout>
             <TextView
                 android:layout_width="match_parent"
@@ -34,7 +34,7 @@
                 android:layout_marginBottom="20dp"
                 android:layout_marginLeft="20dp"
                 android:text="@string/name_log"
-                android:textColor="@color/colorlogin"
+                android:textColor="@color/colorEdt"
                 android:textSize="19dp" />
             <LinearLayout
                 android:layout_width="match_parent"
@@ -55,7 +55,7 @@
                     android:layout_height="wrap_content"
                     android:text=" Student Identity Number"
                     android:hint="B17Dcpt123"
-                    android:textColor="@color/colorEdt"
+                    android:textColor="@color/colorLogin2"
                     android:paddingLeft="016dp" />
 
             </LinearLayout>
@@ -76,17 +76,17 @@
                     android:maxLines="1"
                     android:lines="1"
                     android:id="@+id/etTPass"
-                    android:layout_width="318dp"
+                    android:layout_width="301dp"
                     android:layout_height="45dp"
                     android:text="Password"
                     android:hint="123456"
-                    android:textColor="@color/colorEdt"
+                    android:textColor="@color/colorLogin2"
                     android:paddingLeft="016dp" />
                 <ImageView
                     android:layout_width="17dp"
                     android:layout_height="19dp"
                     android:layout_marginTop="14dp"
-                    android:src="@drawable/hide" />
+                    android:src="@drawable/hide1" />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -100,11 +100,10 @@
                     android:id="@+id/btnDangnhap"
                     android:layout_width="150dp"
                     android:layout_height="45dp"
-                    android:background="@drawable/dangnhap"
-                    android:text="Log me in"
+                    android:src="@drawable/dangnhap"
                     android:textSize="19dp"
-                    android:enabled="true"
-                    android:textColor="@color/colorlogin" />
+                    android:text="@string/login"
+                     />
             </LinearLayout>
 
             <TextView

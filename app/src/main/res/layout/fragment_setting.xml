@@ -151,13 +151,16 @@
     </LinearLayout>
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:paddingTop="335dp">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="@string/ver"
             android:textColor="@color/colorLogin2"
+            android:layout_gravity="center"
+            android:gravity="center"
             />
 
     </RelativeLayout>
