@@ -1,27 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:visible="true"
-        android:id="@+id/navigation_home"
-        android:icon="@drawable/home11"
-        android:title="" />
+            android:id="@+id/navigation_home"
+            android:icon="@drawable/home11"
+            android:title=""
+            app:showAsAction="ifRoom|withText"/>
 
     <item
         android:visible="true"
         android:id="@+id/navigation_personal"
         android:icon="@drawable/person1"
-        android:title="" />
+        android:title=""
+        app:showAsAction="ifRoom|withText"/>
 
     <item
         android:visible="true"
         android:id="@+id/navigation_notifications"
         android:icon="@drawable/noti1"
-        android:title="" />
+        android:title=""
+        app:showAsAction="ifRoom|withText"/>
 
     <item
         android:visible="true"
         android:id="@+id/navigation_setting"
         android:icon="@drawable/set1"
-        android:title="" />
+        android:title=""
+        app:showAsAction="ifRoom|withText"/>
 </menu>
