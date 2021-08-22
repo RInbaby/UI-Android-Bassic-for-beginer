@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:id="@+id/listiem"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBackground"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="5dp">
+        <ImageButton
+            android:id="@+id/imgbt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back2"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HELLO, YEN NHI! "
+            android:textColor="@color/colorlogin"
+            android:paddingLeft="3dp"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:textSize="22dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingTop="4dp"
+        android:background="@drawable/search"
+        android:layout_marginRight="13dp"
+        android:layout_marginLeft="13dp"
+        android:paddingBottom="4dp"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/edt_search_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="text"
+            android:hint="@string/Search"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:lines="1"
+            android:textColorHint="@color/colorLogin2"
+            android:textColor="@color/colorEdt"
+            android:textSize="15sp"
+            android:background="@android:color/transparent"/>
+
+        <ImageView
+            android:id="@+id/iv_clear_text"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="8dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/search1"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="8dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/search"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="@string/News"
+            android:textColor="@color/colorlogin"
+            android:textSize="19dp"
+            android:textStyle="bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcv2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="10dp"
+            android:orientation="horizontal" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="300dp"
+            android:text="@string/see"
+            android:textSize="15dp"
+            android:background="@drawable/seeall"
+            android:textColor="@color/colorlogin"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="9dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

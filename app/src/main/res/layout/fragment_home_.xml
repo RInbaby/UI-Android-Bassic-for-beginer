@@ -7,7 +7,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorBackground">
+    <FrameLayout
+        android:id="@+id/fra"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
+    </FrameLayout>
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -132,6 +138,7 @@
 
                     </LinearLayout>
                     <LinearLayout
+                        android:id="@+id/list_item1"
                         android:layout_width="match_parent"
                         android:layout_height="190dp"
                         android:orientation="horizontal">
@@ -147,6 +154,7 @@
                     </LinearLayout>
 
                     <Button
+                        android:id="@+id/see1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="300dp"
@@ -172,11 +180,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/News"
-                        android:textSize="19dp"
-                        android:textStyle="bold"
                         android:layout_margin="15dp"
-                        android:textColor="@color/colorlogin"/>
+                        android:text="@string/News"
+                        android:textColor="@color/colorlogin"
+                        android:textSize="19dp"
+                        android:textStyle="bold" />
 
                     <androidx.recyclerview.widget.RecyclerView
                         android:id="@+id/rcv2"

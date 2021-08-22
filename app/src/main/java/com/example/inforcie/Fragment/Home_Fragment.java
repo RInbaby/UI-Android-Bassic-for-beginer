@@ -1,15 +1,22 @@
 package com.example.inforcie.Fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 
+import com.example.inforcie.Activity.Bottom_Home;
+import com.example.inforcie.Activity.MainActivity;
 import com.example.inforcie.Adapter.AdapterEvents;
 import com.example.inforcie.Adapter.AdapterNews;
 import com.example.inforcie.Adapter.AdapterSociety;
@@ -24,6 +31,9 @@ import java.util.ArrayList;
 public class Home_Fragment extends Fragment {
 
         RecyclerView recyclerView, recyclerView2,recyclerView3,recyclerView4,recyclerView5;
+        ImageView img;
+        LinearLayout item1,list_item1;
+        Button see1;
 
         MyImage listAdapter;
         ArrayList<Image> contactsList = new ArrayList<>();
@@ -49,6 +59,12 @@ public class Home_Fragment extends Fragment {
         recyclerView3 = view.findViewById(R.id.rcvevent);
         recyclerView4 = view.findViewById(R.id.society);
         recyclerView5 = view.findViewById(R.id.society2);
+
+        img = view.findViewById(R.id.iv_clear_text);
+        item1 = view.findViewById(R.id.item1);
+        list_item1 = view.findViewById(R.id.list_item1);
+
+        see1 = view.findViewById(R.id.see1);
         //LinearLayoutManager layoutManager = new LinearLayoutManager(getContext());
 
         // for furture
@@ -70,12 +86,19 @@ public class Home_Fragment extends Fragment {
         recyclerView2.setLayoutManager(layoutManager2);
         listAdapter2 = new AdapterNews(contactsList2, getContext());
         recyclerView2.setAdapter(listAdapter2);
-        contactsList2.add(new News(R.drawable.list2, "May20,20", "The global ecomic impact of Covid"));
-        contactsList2.add(new News(R.drawable.list1, "May11,11", "The global "));
-        contactsList2.add(new News(R.drawable.list2, "May21,21", "ecomic impact of Covid"));
-        contactsList2.add(new News(R.drawable.list1, "May20,20", " ecomic impact of "));
-        contactsList2.add(new News(R.drawable.list2, "May20,20", "The  ecomic  of Covid"));
-        contactsList2.add(new News(R.drawable.list1, "May20,20", "global ecomic  of "));
+        contactsList2.add(new News(R.drawable.item4, "May20,20", "The global ecomic impact of Covid"));
+        contactsList2.add(new News(R.drawable.item1, "May11,11", "The global "));
+        contactsList2.add(new News(R.drawable.item4, "May21,21", "ecomic impact of Covid"));
+        contactsList2.add(new News(R.drawable.item3, "May20,20", " ecomic impact of "));
+        contactsList2.add(new News(R.drawable.item2, "May20,20", "The  ecomic  of Covid"));
+        contactsList2.add(new News(R.drawable.item1, "May20,20", "global ecomic  of "));
+        contactsList2.add(new News(R.drawable.item3, "May21,21", "ecomic impact of Covid"));
+        contactsList2.add(new News(R.drawable.item2, "May21,21", "ecomic impact of Covid"));
+        contactsList2.add(new News(R.drawable.item4, "May21,21", "ecomic impact of Covid"));
+        contactsList2.add(new News(R.drawable.item1, "May21,21", "ecomic impact of Covid"));
+        contactsList2.add(new News(R.drawable.item3, "May20,20", " ecomic impact of jdfbwbvsdhb"));
+        contactsList2.add(new News(R.drawable.item1, "May20,20", " ecomic impact of "));
+        contactsList2.add(new News(R.drawable.item2, "May20,20", " ecomic impact of "));
         listAdapter.notifyDataSetChanged();
 
         // For Events
@@ -119,6 +142,34 @@ public class Home_Fragment extends Fragment {
         contactsList4.add(new Image(R.drawable.list1, "May20,20", "global ecomic  of "));
         listAdapter4.notifyDataSetChanged();
 
+        // custom button
+        //search
+        img.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //linearrr.setVisibility(View.VISIBLE);
+                loadFragment(new ListItem1());
+
+            }
+        });
+
+        // img_feature
+        see1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //linearrr.setVisibility(View.VISIBLE);
+                loadFragment(new ListItem1());
+
+            }
+        });
         return view;
     }
+    private void loadFragment(Fragment fragment) {
+        FragmentTransaction transaction = this.getActivity().getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.homefragment, fragment);
+        transaction.addToBackStack(null);
+        transaction.commit();
+
+    }
+
 }
