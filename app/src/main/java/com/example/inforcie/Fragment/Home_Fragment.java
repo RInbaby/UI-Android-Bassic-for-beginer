@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 
 import com.example.inforcie.Adapter.AdapterEvents;
 import com.example.inforcie.Adapter.AdapterNews;
+import com.example.inforcie.Adapter.AdapterSociety;
 import com.example.inforcie.Adapter.MyImage;
 import com.example.inforcie.Model.Events;
 import com.example.inforcie.Model.Image;
@@ -22,7 +23,7 @@ import java.util.ArrayList;
 
 public class Home_Fragment extends Fragment {
 
-        RecyclerView recyclerView, recyclerView2,recyclerView3;
+        RecyclerView recyclerView, recyclerView2,recyclerView3,recyclerView4,recyclerView5;
 
         MyImage listAdapter;
         ArrayList<Image> contactsList = new ArrayList<>();
@@ -35,14 +36,19 @@ public class Home_Fragment extends Fragment {
         AdapterEvents listAdapter3;
         ArrayList<Events> contactsList3 = new ArrayList<>();
 
+        // society
+        AdapterSociety listAdapter4;
+        ArrayList<Image> contactsList4 = new ArrayList<>();
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_home_, container, false);
-
         recyclerView = view.findViewById(R.id.rcvimg);
         recyclerView2 = view.findViewById(R.id.rcv2);
         recyclerView3 = view.findViewById(R.id.rcvevent);
+        recyclerView4 = view.findViewById(R.id.society);
+        recyclerView5 = view.findViewById(R.id.society2);
         //LinearLayoutManager layoutManager = new LinearLayoutManager(getContext());
 
         // for furture
@@ -64,7 +70,6 @@ public class Home_Fragment extends Fragment {
         recyclerView2.setLayoutManager(layoutManager2);
         listAdapter2 = new AdapterNews(contactsList2, getContext());
         recyclerView2.setAdapter(listAdapter2);
-
         contactsList2.add(new News(R.drawable.list2, "May20,20", "The global ecomic impact of Covid"));
         contactsList2.add(new News(R.drawable.list1, "May11,11", "The global "));
         contactsList2.add(new News(R.drawable.list2, "May21,21", "ecomic impact of Covid"));
@@ -78,7 +83,6 @@ public class Home_Fragment extends Fragment {
         recyclerView3.setLayoutManager(layoutManager3);
         listAdapter3 = new AdapterEvents(contactsList3, getContext());
         recyclerView3.setAdapter(listAdapter3);
-
         contactsList3.add(new Events(R.drawable.list2, "May20,20", "The global ecomic impact of Covid"));
         contactsList3.add(new Events(R.drawable.list1, "May11,11", "The global "));
         contactsList3.add(new Events(R.drawable.list2, "May21,21", "ecomic impact of Covid"));
@@ -87,9 +91,33 @@ public class Home_Fragment extends Fragment {
         contactsList3.add(new Events(R.drawable.list2, "May20,20", "global ecomic  of "));
         listAdapter.notifyDataSetChanged();
 
+        // for society1
+        LinearLayoutManager layoutManager4 = new LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false);
+        recyclerView4.setLayoutManager(layoutManager4);
+        listAdapter4 = new AdapterSociety(contactsList4, getContext());
+        recyclerView4.setAdapter(listAdapter4);
 
+        contactsList4.add(new Image(R.drawable.list1, "May20,20", "The global ecomic impact of Covid"));
+        contactsList4.add(new Image(R.drawable.list2, "May11,11", "The global "));
+        contactsList4.add(new Image(R.drawable.list1, "May21,21", "ecomic impact of Covid"));
+        contactsList4.add(new Image(R.drawable.list1, "May20,20", " ecomic impact of "));
+        contactsList4.add(new Image(R.drawable.list2, "May20,20", "The  ecomic  of Covid"));
+        contactsList4.add(new Image(R.drawable.list1, "May20,20", "global ecomic  of "));
+        listAdapter4.notifyDataSetChanged();
 
+        // for society2
+        LinearLayoutManager layoutManager5 = new LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false);
+        recyclerView5.setLayoutManager(layoutManager5);
+        listAdapter4 = new AdapterSociety(contactsList4, getContext());
+        recyclerView5.setAdapter(listAdapter4);
 
+        contactsList4.add(new Image(R.drawable.list1, "May20,20", "The global ecomic impact of Covid"));
+        contactsList4.add(new Image(R.drawable.list2, "May11,11", "The global "));
+        contactsList4.add(new Image(R.drawable.list1, "May21,21", "ecomic impact of Covid"));
+        contactsList4.add(new Image(R.drawable.list1, "May20,20", " ecomic impact of "));
+        contactsList4.add(new Image(R.drawable.list2, "May20,20", "The  ecomic  of Covid"));
+        contactsList4.add(new Image(R.drawable.list1, "May20,20", "global ecomic  of "));
+        listAdapter4.notifyDataSetChanged();
 
         return view;
     }

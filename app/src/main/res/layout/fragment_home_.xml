@@ -204,39 +204,51 @@
                     android:layout_height="8dp"/>
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="400dp"
+                    android:layout_height="300dp"
                     android:background="@drawable/search"
                     android:orientation="vertical">
 
                     <TextView
                         android:layout_width="wrap_content"
-                        android:layout_height="19dp"
+                        android:layout_height="wrap_content"
                         android:text="@string/Society"
                         android:textSize="19dp"
                         android:textStyle="bold"
-                        android:layout_margin="18dp"
+                        android:layout_margin="10dp"
                         android:textColor="@color/colorlogin"/>
-<!--                    <LinearLayout-->
-<!--                        android:layout_width="match_parent"-->
-<!--                        android:layout_height="190dp"-->
-<!--                        android:orientation="vertical">-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
 
-<!--                        <androidx.recyclerview.widget.RecyclerView-->
-<!--                            android:id="@+id/society"-->
-<!--                            android:layout_width="match_parent"-->
-<!--                            android:layout_height="wrap_content"-->
-<!--                            android:orientation="horizontal"-->
-<!--                            android:layout_marginHorizontal="10dp"-->
-<!--                            android:padding="9dp"/>-->
-<!--                        <androidx.recyclerview.widget.RecyclerView-->
-<!--                            android:id="@+id/society2"-->
-<!--                            android:layout_width="match_parent"-->
-<!--                            android:layout_height="wrap_content"-->
-<!--                            android:orientation="horizontal"-->
-<!--                            android:layout_marginHorizontal="10dp"-->
-<!--                            android:padding="9dp"/>-->
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/society"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:orientation="horizontal"
+                            android:layout_marginHorizontal="10dp"
+                            android:padding="5dp"/>
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/society2"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:orientation="horizontal"
+                            android:layout_marginHorizontal="10dp"
+                            android:padding="5dp"/>
 
-<!--                    </LinearLayout>-->
+                    </LinearLayout>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="300dp"
+                        android:text="@string/see"
+                        android:textSize="15dp"
+                        android:background="@drawable/seeall"
+                        android:textColor="@color/colorlogin"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="9dp"/>
 
                 </LinearLayout>
 
