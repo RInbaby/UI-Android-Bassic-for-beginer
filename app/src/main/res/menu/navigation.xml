@@ -2,22 +2,26 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
+        android:visible="true"
         android:id="@+id/navigation_home"
-        android:icon="@drawable/home"
+        android:icon="@drawable/home11"
         android:title="" />
 
     <item
+        android:visible="true"
         android:id="@+id/navigation_personal"
-        android:icon="@drawable/icon2x"
+        android:icon="@drawable/person1"
         android:title="" />
 
     <item
+        android:visible="true"
         android:id="@+id/navigation_notifications"
-        android:icon="@drawable/notification"
+        android:icon="@drawable/noti1"
         android:title="" />
 
     <item
+        android:visible="true"
         android:id="@+id/navigation_setting"
-        android:icon="@drawable/setting"
+        android:icon="@drawable/set1"
         android:title="" />
 </menu>

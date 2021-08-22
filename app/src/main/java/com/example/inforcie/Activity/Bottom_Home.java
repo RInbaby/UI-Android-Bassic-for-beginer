@@ -45,6 +45,7 @@ public class Bottom_Home extends AppCompatActivity {
                                 break;
                             case R.id.navigation_notifications:
                                 loadFragment(new Notificators());
+                                return true;
                             case R.id.navigation_setting:
                                 loadFragment(new Setting());
 

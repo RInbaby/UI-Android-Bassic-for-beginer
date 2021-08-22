@@ -30,8 +30,7 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
-        android:background="@color/colorBackground"
-
+        android:background="@color/colorLogin2"
         app:menu="@menu/navigation"/>
 
 </RelativeLayout>
