@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
+    android:id="@+id/setnavigation"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:paddingTop="10dp"
     android:background="@color/colorSearch"
@@ -14,10 +15,14 @@
         android:gravity="center_horizontal"
         android:paddingTop="10dp"
         android:textSize="18dp"/>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
 
     <LinearLayout android:layout_height="70dp"
         android:layout_width="match_parent"
         android:background="@drawable/search"
+
         android:orientation="horizontal">
         <ImageView
             android:id="@+id/imglist2"
@@ -58,101 +63,62 @@
         android:paddingTop="20dp"
         android:paddingLeft="18dp"
         android:orientation="vertical">
-        <TextView
+        <ImageView
+            android:id="@+id/t1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/colorlogin"
-            android:textSize="17dp"
-            android:text="@string/About"/>
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="12dp"
-            />
+            android:src="@drawable/lo1"/>
 
         <View
             android:layout_width="370dp"
             android:layout_height="1dp"
             android:background="@color/colorLogin2"/>
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="12dp"
-            />
 
-        <TextView
+        <ImageView
+            android:id="@+id/t2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/colorlogin"
-            android:textSize="17dp"
-            android:text="@string/noti"/>
-        <Space
+            android:src="@drawable/aboutus"/>
+        <View
+            android:layout_width="370dp"
+            android:layout_height="1dp"
+            android:background="@color/colorLogin2"/>
+
+        <ImageView
+            android:id="@+id/t3"
             android:layout_width="match_parent"
-            android:layout_height="12dp"
-            />
+            android:layout_height="wrap_content"
+            android:src="@drawable/noti"/>
 
         <View
             android:layout_width="370dp"
             android:layout_height="1dp"
             android:background="@color/colorLogin2"/>
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="12dp"
-            />
 
-        <TextView
+        <ImageView
+            android:id="@+id/t4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/colorlogin"
-            android:textSize="17dp"
-            android:text="@string/language"/>
+            android:src="@drawable/contact"/>
 
         <Space
             android:layout_width="match_parent"
             android:layout_height="12dp"
             />
 
-        <View
-            android:layout_width="370dp"
-            android:layout_height="1dp"
-            android:background="@color/colorLogin2"/>
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="12dp"
-            />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/colorlogin"
-            android:textSize="17dp"
-            android:text="@string/Contact"/>
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="12dp"
-            />
-
-        <View
-            android:layout_width="370dp"
-            android:layout_height="1dp"
-            android:background="@color/colorLogin2"/>
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="12dp"
-            />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/colorlogin"
-            android:textSize="17dp"
-            android:text="@string/logout"/>
+<!--        <TextView-->
+<!--            android:id="@+id/t5"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textColor="@color/colorlogin"-->
+<!--            android:textSize="17dp"-->
+<!--            android:text="@string/logout"/>-->
 
     </LinearLayout>
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingTop="335dp">
+        android:paddingTop="215dp">
 
         <TextView
             android:layout_width="match_parent"

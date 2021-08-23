@@ -31,9 +31,10 @@ import java.util.ArrayList;
 public class Home_Fragment extends Fragment {
 
         RecyclerView recyclerView, recyclerView2,recyclerView3,recyclerView4,recyclerView5;
+        RecyclerView std, std2;
         ImageView img;
         LinearLayout item1,list_item1;
-        Button see1;
+        Button see1,see2;
 
         MyImage listAdapter;
         ArrayList<Image> contactsList = new ArrayList<>();
@@ -59,12 +60,15 @@ public class Home_Fragment extends Fragment {
         recyclerView3 = view.findViewById(R.id.rcvevent);
         recyclerView4 = view.findViewById(R.id.society);
         recyclerView5 = view.findViewById(R.id.society2);
+        std = view.findViewById(R.id.student);
+        std2 = view.findViewById(R.id.student2);
 
         img = view.findViewById(R.id.iv_clear_text);
         item1 = view.findViewById(R.id.item1);
         list_item1 = view.findViewById(R.id.list_item1);
 
         see1 = view.findViewById(R.id.see1);
+        see2 = view.findViewById(R.id.see2);
         //LinearLayoutManager layoutManager = new LinearLayoutManager(getContext());
 
         // for furture
@@ -114,7 +118,7 @@ public class Home_Fragment extends Fragment {
         contactsList3.add(new Events(R.drawable.list2, "May20,20", "global ecomic  of "));
         listAdapter.notifyDataSetChanged();
 
-        // for society1
+        // for society
         LinearLayoutManager layoutManager4 = new LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false);
         recyclerView4.setLayoutManager(layoutManager4);
         listAdapter4 = new AdapterSociety(contactsList4, getContext());
@@ -142,6 +146,36 @@ public class Home_Fragment extends Fragment {
         contactsList4.add(new Image(R.drawable.list1, "May20,20", "global ecomic  of "));
         listAdapter4.notifyDataSetChanged();
 
+
+        // For student
+        LinearLayoutManager layoutManager6 = new LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false);
+        std.setLayoutManager(layoutManager6);
+        listAdapter4 = new AdapterSociety(contactsList4, getContext());
+        std.setAdapter(listAdapter4);
+
+        contactsList4.add(new Image(R.drawable.list1, "May20,20", "The global ecomic impact of Covid"));
+        contactsList4.add(new Image(R.drawable.list2, "May11,11", "The global "));
+        contactsList4.add(new Image(R.drawable.list1, "May21,21", "ecomic impact of Covid"));
+        contactsList4.add(new Image(R.drawable.list1, "May20,20", " ecomic impact of "));
+        contactsList4.add(new Image(R.drawable.list2, "May20,20", "The  ecomic  of Covid"));
+        contactsList4.add(new Image(R.drawable.list1, "May20,20", "global ecomic  of "));
+        listAdapter4.notifyDataSetChanged();
+
+        // for student2
+        LinearLayoutManager layoutManager7= new LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false);
+        std2.setLayoutManager(layoutManager7);
+        listAdapter4 = new AdapterSociety(contactsList4, getContext());
+        std2.setAdapter(listAdapter4);
+
+        contactsList4.add(new Image(R.drawable.list1, "May20,20", "The global ecomic impact of Covid"));
+        contactsList4.add(new Image(R.drawable.list2, "May11,11", "The global "));
+        contactsList4.add(new Image(R.drawable.list1, "May21,21", "ecomic impact of Covid"));
+        contactsList4.add(new Image(R.drawable.list1, "May20,20", " ecomic impact of "));
+        contactsList4.add(new Image(R.drawable.list2, "May20,20", "The  ecomic  of Covid"));
+        contactsList4.add(new Image(R.drawable.list1, "May20,20", "global ecomic  of "));
+        listAdapter4.notifyDataSetChanged();
+
+
         // custom button
         //search
         img.setOnClickListener(new View.OnClickListener() {
@@ -162,6 +196,16 @@ public class Home_Fragment extends Fragment {
 
             }
         });
+
+        see2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //linearrr.setVisibility(View.VISIBLE);
+                loadFragment(new ListItem1());
+
+            }
+        });
+
         return view;
     }
     private void loadFragment(Fragment fragment) {
